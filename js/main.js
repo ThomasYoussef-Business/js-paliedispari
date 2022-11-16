@@ -1,5 +1,12 @@
 "use strict";
 
+const parolaDaTestare = prompt("Inserisci una parola per vedere se è palindroma: ");
+if (isPalindrome(parolaDaTestare)) {
+    alert("La parola inserita è palindroma!");
+} else {
+    alert("La parola inserita non è palindroma...");
+}
+
 function invertiStringa(stringaDaInvertire) {
     stringaDaInvertire = stringaDaInvertire.trim();
     let risultatoInversione = '';
@@ -20,4 +27,3 @@ function isPalindrome(stringa) {
     return false;
 }
 
-console.log(`${isPalindrome("")}`);
