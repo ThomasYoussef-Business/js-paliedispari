@@ -13,6 +13,11 @@ function invertiStringa(stringaDaInvertire) {
     return risultatoInversione;
 }
 
-const isPalindrome = (stringa) => stringa ? invertiStringa(stringa).toLowerCase() === stringa.toLowerCase() : false;
+function isPalindrome(stringa) {
+    if (stringa) {
+        return invertiStringa(stringa).toLowerCase() === stringa.toLowerCase();
+    }
+    return false;
+}
 
 console.log(`${isPalindrome("")}`);
