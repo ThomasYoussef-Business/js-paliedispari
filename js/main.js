@@ -4,6 +4,7 @@ function invertiStringa(stringaDaInvertire) {
     stringaDaInvertire = stringaDaInvertire.trim();
     let risultatoInversione = '';
 
+    // Per invertire la stringa, iniziamo a contare dalla fine, e scendiamo
     for (let i = stringaDaInvertire.length - 1; i >= 0; i--) {
         const carattere = stringaDaInvertire[i];
         risultatoInversione += carattere;
@@ -12,4 +13,6 @@ function invertiStringa(stringaDaInvertire) {
     return risultatoInversione;
 }
 
-console.log(invertiStringa("Ciao a tutti!"));
+const isPalindrome = (stringa) => stringa ? invertiStringa(stringa).toLowerCase() === stringa.toLowerCase() : false;
+
+console.log(`${isPalindrome("")}`);
